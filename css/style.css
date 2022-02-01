@@ -115,8 +115,17 @@ justify-content: space-around;
 .side-bar i{
     margin-right: 10px;
 }
+
+/* ......................... main-img ..................... */
 .main-img{
     grid-area: main-img;
+grid-column: 2/9;
+grid-row: 2/8;
+}
+.main-img img{
+    width: 100vw;
+    height: 70vh;
+    ba
 }
 .youtuber-pro{
     grid-area: youtuber;
