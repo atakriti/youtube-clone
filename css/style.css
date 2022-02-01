@@ -36,7 +36,7 @@ li{
     align-items: center;
     /* border: 1px red solid; */
     width: 100vw;
-    grid-column: 1/9;
+    grid-column: 1/10;
     grid-row: 1/2;
     
 }
@@ -119,14 +119,16 @@ justify-content: space-around;
 /* ......................... main-img ..................... */
 .main-img{
     grid-area: main-img;
-grid-column: 2/9;
-grid-row: 2/8;
+grid-column: 2/10;
+grid-row: 2/4;
+/* background-image: url(/img/main-img.jpg);
+background-repeat: no-repeat; */
 }
 .main-img img{
-    width: 100vw;
-    height: 70vh;
-    ba
+    width: 100%;
+    background-attachment: fixed;
 }
+/* ........................ youtuber-pro ...................... */
 .youtuber-pro{
     grid-area: youtuber;
 }
