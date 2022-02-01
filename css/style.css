@@ -182,7 +182,7 @@ margin-top: 20px;
 .list{
     width: 100vw;
     position: sticky;
-    top: 4.5rem;
+    top: 4rem;
     background-color: var(--nav-color);
 }
 
