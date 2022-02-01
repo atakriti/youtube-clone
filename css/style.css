@@ -1,0 +1,49 @@
+:root{
+    --nav-color:white;
+    --background:rgb(236, 236, 236);
+    --sub-btn:rgb(200, 39, 39);
+    font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+
+}
+.navbar{
+    grid-area: navbar;
+}
+.side-bar{
+    grid-area: side-bar;
+}
+.main-img{
+    grid-area: main-img;
+}
+.youtuber-pro{
+    grid-area: youtuber;
+}
+.video{
+    grid-area: video;
+}
+.first-row{
+    grid-area: first;
+}
+.second-row{
+    grid-area: second;
+}
+.third-row{
+    grid-area: third;
+}
+.fourth-row{
+    grid-area: fourth;
+}
+
+
+
