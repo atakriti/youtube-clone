@@ -27,8 +27,8 @@ small{
 .container{
    
     display: grid;
-    grid-template-columns:13vw 10vw 20vw 20vw 1fr  ;
-    grid-template-rows:   8vh 30vh 10vh 10vh 10vh 45vh 40vh 40vh   ;
+    grid-template-columns:13vw 10vw 20vw 20vw 37vw  ;
+    grid-template-rows:   8vh 30vh 10vh 10vh 10vh 45vh 40vh 40vh 40vh   ;
     
     
 
@@ -42,7 +42,7 @@ small{
     align-items: center;
     /* border: 1px red solid; */
     width: 100vw;
-    grid-column: 1/10;
+    grid-column: 1/6;
     grid-row: 1/2;
     background-color: var(--nav-color);
     position: sticky;
@@ -134,7 +134,7 @@ justify-content: space-around;
 /* ......................... main-img ..................... */
 .main-img{
     grid-area: main-img;
-grid-column: 2/10;
+grid-column: 2/6;
 grid-row: 2/4;
 background-image: url(/img/main-img.jpg);
 background-repeat: no-repeat;
@@ -151,9 +151,10 @@ background-position: -1rem -31rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    grid-column: 2/10;
+    grid-column: 2/6;
 grid-row: 4/5;
 margin-top: 20px;
+
 
 
 }
@@ -180,7 +181,9 @@ margin-top: 20px;
 
 /* ...................... list ..................... */
 .list{
-    width: 100vw;
+    grid-column: 2/6;
+    grid-row: 5/6;
+    
     position: sticky;
     top: 4rem;
     background-color: var(--nav-color);
@@ -188,8 +191,7 @@ margin-top: 20px;
 
 .list1{
     grid-area: list;
-    grid-column: 2/10;
-    grid-row: 5/6;
+   
     margin: 2rem 0px 0px 10rem;
     width: 50vw;
     
@@ -211,7 +213,7 @@ margin-top: 20px;
 /* ........................ video .................... */
 
 .video{
-    grid-column:2/10 ;
+    grid-column:2/6 ;
     grid-row:6/7 ;
     background-color: var(--background);
     height: 50vh;
@@ -254,7 +256,7 @@ margin-top: 20px;
 
 .first-row{
     grid-area: first;
-    grid-column:2/10 ;
+    grid-column:2/6 ;
     grid-row:7/8 ;
     background-color: var(--background);
 
@@ -300,7 +302,7 @@ height: 12vh;
 
 
 
-
+/* ....................... second row ........................ */
 
 
 
@@ -309,7 +311,7 @@ height: 12vh;
 
 .second-row{
     grid-area: second;
-    grid-column:2/10 ;
+    grid-column:2/6 ;
     grid-row:8/9 ;
     background-color: var(--background);
 }
@@ -338,11 +340,11 @@ height: 12vh;
     margin-top: 2rem;
 }
 
-
+/* ................... third row ........................... */
 
 .third-row{
     grid-area: second;
-    grid-column:2/10 ;
+    grid-column:2/6 ;
     grid-row:9/10 ;
     background-color: var(--background);
 }
@@ -368,3 +370,5 @@ height: 12vh;
 
 
 
+...................................................
+..................................
