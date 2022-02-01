@@ -26,7 +26,8 @@ small{
     border: 1px solid;
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-    grid-template-rows:   8vh 1fr 1fr 10vh 10vh 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows:   8vh 30vh 10vh 10vh 10vh 45vh 40vh 40vh 40vh  ;
+    
     
 
 
@@ -197,13 +198,14 @@ margin-top: 20px;
     grid-column:2/10 ;
     grid-row:6/7 ;
     background-color: var(--background);
-    height: 40vh;
+    height: 50vh;
    
     
 }
 .video-one{
     display: flex;
     align-items: center;
+  
 }
 .video-one>p{
     
@@ -221,7 +223,7 @@ margin-top: 20px;
     width: 26vw;
     height: 30vh;
     background-position: -287px -95px;
-   margin-left: 18rem;
+   margin-left: 12rem;
    margin-top: 3rem;
 }
 .video hr{
@@ -237,14 +239,14 @@ margin-top: 20px;
 .first-row{
     grid-area: first;
     grid-column:2/10 ;
-    grid-row:7/10 ;
+    grid-row:7/8 ;
     background-color: var(--background);
 
 }
 .play-all{
     display: flex;
     width: 15vw;
-   margin-left: 18rem;
+   margin-left: 12rem;
     align-items: center;
 
 }
@@ -261,7 +263,7 @@ margin-top: 20px;
 .first-row-imgs{
     display: flex;
 width: 70vw;
-margin-left: 10rem;
+margin-left: 11rem;
 margin-top: 2rem;
 justify-content: space-around;
 
@@ -291,12 +293,61 @@ height: 12vh;
 
 .second-row{
     grid-area: second;
+    grid-column:2/10 ;
+    grid-row:8/9 ;
+    background-color: var(--background);
 }
+.second-row p:nth-child(1){
+    margin-left: 12rem;
+    width: 10rem;
+}
+.second-row-imgs{
+    display: flex;
+width: 70vw;
+margin-left: 11rem;
+margin-top: 2rem;
+justify-content: space-around;
+
+}
+.second-row-imgs>div>img{
+width: 10vw;
+height: 12vh;
+}
+.second-row-imgs>div{
+    width: 10vw;
+}
+.second-row hr{
+    width: 70vw;
+    margin-left: 10rem;
+    margin-top: 2rem;
+}
+
+
+
 .third-row{
-    grid-area: third;
+    grid-area: second;
+    grid-column:2/10 ;
+    grid-row:9/10 ;
+    background-color: var(--background);
 }
-.fourth-row{
-    grid-area: fourth;
+.third-row p:nth-child(1){
+    margin-left: 12rem;
+    width: 10rem;
+}
+.third-row-imgs{
+    display: flex;
+width: 70vw;
+margin-left: 11rem;
+margin-top: 2rem;
+justify-content: space-around;
+
+}
+.third-row-imgs>div>img{
+width: 10vw;
+height: 12vh;
+}
+.third-row-imgs>div{
+    width: 10vw;
 }
 
 
