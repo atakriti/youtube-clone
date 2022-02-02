@@ -136,7 +136,7 @@ justify-content: space-around;
     grid-area: main-img;
 grid-column: 2/6;
 grid-row: 2/4;
-background-image: url(../img/main-img.jpg);
+background-image: url(./img/main-img.jpg);
 background-repeat: no-repeat;
 /* background-attachment: fixed; */
 background-position: 0rem -28rem;
@@ -235,7 +235,7 @@ margin-top: 20px;
 }
 
 .video-img{
-    background-image: url(../img/video.jpg);
+    background-image: url(./img/video.jpg);
     width: 26vw;
     height: 30vh;
     /* background-position: -287px -95px; */
