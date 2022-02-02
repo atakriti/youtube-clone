@@ -12,9 +12,15 @@
   scroll-behavior: smooth;
   
 }
+i{
+    cursor: pointer;
+}
 a{
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
+}
+a:hover{
+    color: rgb(179, 179, 179);
 }
 li{
     list-style: none;
@@ -174,8 +180,14 @@ margin-top: 20px;
     background-color: var(--sub-btn);
     color: white;
     font-size: 20px;
-    
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
 }
+.youtuber-pro button:hover{
+    opacity: 0.6;
+
+ }
 
 /* ...................... list ..................... */
 .list{
