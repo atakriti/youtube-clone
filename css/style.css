@@ -136,15 +136,13 @@ justify-content: space-around;
     grid-area: main-img;
 grid-column: 2/6;
 grid-row: 2/4;
-background-image: url(/img/main-img.jpg);
+background-image: url(../img/main-img.jpg);
 background-repeat: no-repeat;
-background-attachment: fixed;
-background-position: -1rem -31rem;
+/* background-attachment: fixed; */
+background-position: 0rem -28rem;
+background-size: cover;
 }
-.main-img img{
-    width: 100%;
-    background-attachment: fixed;
-}
+
 /* ........................ youtuber-pro ...................... */
 .youtuber-pro{
     grid-area: youtuber;
@@ -237,10 +235,11 @@ margin-top: 20px;
 }
 
 .video-img{
-    background-image: url(/img/video.jpg);
+    background-image: url(../img/video.jpg);
     width: 26vw;
     height: 30vh;
-    background-position: -287px -95px;
+    /* background-position: -287px -95px; */
+    background-position: center;
    margin-left: 12rem;
    margin-top: 3rem;
 }
