@@ -34,7 +34,7 @@ small{
 .container{
    
     display: grid;
-    grid-template-columns:13vw 10vw 20vw 20vw 37vw  ;
+    grid-template-columns:13vw 17vw 70vw  ;
     grid-template-rows:   8vh 30vh 10vh 10vh 10vh 45vh 40vh 40vh 40vh   ;
     
     
@@ -49,14 +49,12 @@ small{
     align-items: center;
     /* border: 1px red solid; */
     width: 100vw;
-    grid-column: 1/6;
+    grid-column: 1/4;
     grid-row: 1/2;
     background-color: var(--nav-color);
     position: sticky;
     top: 0;
     z-index: 9;
-   
-    
 }
 .logo{
     display: flex;
@@ -141,7 +139,7 @@ justify-content: space-around;
 /* ......................... main-img ..................... */
 .main-img{
     grid-area: main-img;
-grid-column: 2/6;
+grid-column: 2/4;
 grid-row: 2/4;
 background-image: url(../img/main-img.jpg);
 background-repeat: no-repeat;
@@ -156,7 +154,7 @@ background-size: cover;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    grid-column: 2/6;
+    grid-column: 2/4;
 grid-row: 4/5;
 margin-top: 20px;
 
@@ -192,11 +190,12 @@ margin-top: 20px;
 
 /* ...................... list ..................... */
 .list{
-    grid-column: 2/6;
+    grid-column: 2/4;
     grid-row: 5/6;
     
     position: sticky;
     top: 2.7rem;
+    z-index: 1;
     background-color: var(--nav-color);
 }
 
@@ -224,7 +223,7 @@ margin-top: 20px;
 /* ........................ video .................... */
 
 .video{
-    grid-column:2/6 ;
+    grid-column:2/4 ;
     grid-row:6/7 ;
     background-color: var(--background);
     height: 50vh;
@@ -233,34 +232,48 @@ margin-top: 20px;
 }
 .video-one{
     display: flex;
+    margin-left: 12rem;
     align-items: center;
+    
   
 }
 .video-one>p{
     
     width: 20vw;
     line-height: 40px;
-    margin-top: 45px;
+    /* margin-top: 10px; */
     margin-left: 30px;
 }
 .video-one>p>a{
     color: blue;
 }
-
+.video-img>img{
+    width: 26vw;
+    height: 30vh;
+}
 .video-img{
+    position: relative;
+
+}
+
+/* .video-img{
     background-image: url(../img/video.jpg);
     width: 26vw;
     height: 30vh;
-    /* background-position: -287px -95px; */
+   
     background-position: center;
    margin-left: 12rem;
    margin-top: 3rem;
    display: flex;
    justify-content: center;
    align-items: center;
-}
+} */
 .video-img>i{
     font-size: 100px;
+    position: absolute;
+    top: 5rem;
+    left: 12rem;
+    
     
 }
 .video-img>i:hover{
@@ -282,7 +295,7 @@ margin-top: 20px;
 
 .first-row{
     grid-area: first;
-    grid-column:2/6 ;
+    grid-column:2/4 ;
     grid-row:7/8 ;
     background-color: var(--background);
 
@@ -351,7 +364,7 @@ height: 12vh;
 
 .second-row{
     grid-area: second;
-    grid-column:2/6 ;
+    grid-column:2/4 ;
     grid-row:8/9 ;
     background-color: var(--background);
 }
@@ -397,7 +410,7 @@ height: 12vh;
 
 .third-row{
     grid-area: second;
-    grid-column:2/6 ;
+    grid-column:2/4 ;
     grid-row:9/10 ;
     background-color: var(--background);
 }
@@ -434,7 +447,215 @@ height: 12vh;
 
 }
 
+/* .......................... Media query ...........
+.....................................................
+......................................................
+.................................................
+...................................................... */
+
+@media only screen and (max-width:600px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+.hamburger{
+    display: flex;
+    justify-content: space-around;
+   flex-direction: column;
+    width: 8vw;
+    height: 30px;
+    border: 1px black solid;
+    align-items: center;
+    grid-column:1/2 ;
+    grid-row: 1/2;
+margin-left: 1rem;
+margin-top: 1.5rem;
+position: relative;
+z-index: 2;
+}
+.navbar{
+    /* position: relative;
+    z-index: -1; */
+    grid-column: 2/4;
+    width: 75vw;
+    display: flex;
+}
+
+.logo>i{
+    display: none;
+}
+.logos{
+display: none;
+}
 
 
-...................................................
-..................................
+.hamburger>div{
+    background-color: black;
+    width: 28px;
+    height: 2px;
+}
+/* ............... side bar .................... */
+.side-bar{
+    position: relative;
+    z-index: 1;
+    grid-column: 1/4;
+    font-size: 15px;
+    margin-left: 10px;
+    display: none;
+}
+/* ........................ main img .................... */
+.main-img{
+    background-position: 0rem 0rem;
+    grid-column: 1/4;
+}
+
+.youtuber-pro{
+    grid-column: 1/4;
+
+display: flex;
+justify-content: space-between;
+    
+}
+.youtuber-pro img{
+width: 80px;
+height: 60px;
+margin-right: 10px;
+
+}
+.you-pro{
+    margin-right: 0rem;
+}
+/* ................ list ........................ */
+.list{
+    grid-column: 1/4;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+.list1 {
+    
+  
+   margin: 0px;
+   width:100vw;
+   height: 80px;
+}
+.list1 ul{
+   
+    display: flex;
+    justify-content: space-around;
+   height: 80px;    
+}
+/* .................. video ................... */
+.video{
+    grid-column: 1/4;
+    grid-row:6/7 ;
+}
+.video-one{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    
+height: 45vh;
+}
+.video-one>p{
+  margin: 0;
+    width: 60vw;
+    font-size: 15px;
+}
+.video-img{
+    position: relative;
+   
+}
+.video-img>img{
+    
+    width: 35vw;
+}
+.video-img>i{
+    display: none;
+}
+
+/* ....................... first row ............... */
+.first-row{
+    grid-column: 1/4;
+}
+.play-all{
+    border: 1px red solid;
+    width: 45vw;
+    height: 7vh;
+    margin-left: 10px;
+}
+.play-all>img{
+    width: 10vw;
+    height: 7vh;
+}
+
+.first-row-imgs{
+    border: 1px red solid;
+    margin: 10px auto;
+    width: 100vw;
+}
+.first-row-imgs>div>i{
+    display: none;
+}
+.first-row-imgs>div>p{
+    font-size: 15px;
+}
+.first-row-imgs>div>img{
+    height: 8vh;
+}
+
+/* .......................... second row  ...................... */
+
+.second-row{
+    grid-column: 1/4;
+}
+.second-row p:nth-child(1){
+    border: 1px red solid;
+  margin: 10px;
+}
+
+
+.second-row-imgs{
+    border: 1px red solid;
+    margin: 10px auto;
+    width: 100vw;
+}
+.second-row-imgs>div>i{
+    display: none;
+}
+.second-row-imgs>div>p{
+    font-size: 15px;
+}
+.second-row-imgs>div>img{
+    height: 8vh;
+}
+
+/* .................... third row ........................ */
+.third-row{
+    grid-column: 1/4;
+}
+.third-row p:nth-child(1){
+    border: 1px red solid;
+  margin: 10px;
+}
+
+
+.third-row-imgs{
+    border: 1px red solid;
+    margin: 10px auto;
+    width: 100vw;
+}
+.third-row-imgs>div>i{
+    display: none;
+}
+.third-row-imgs>div>p{
+    font-size: 15px;
+}
+.third-row-imgs>div>img{
+    height: 8vh;
+}
+
+
+}
