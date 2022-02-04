@@ -1,3 +1,6 @@
+@import url(./max992.css);
+@import url(./max394.css);
+
 :root{
     --nav-color:white;
     --background:rgb(245, 245, 245);
@@ -606,14 +609,13 @@ height: 45vh;
 .first-row-imgs>div:nth-child(6){
     display: none;
 }
-.first-row-imgs>div{
-    margin-left:1rem ;
-margin-right: 1.1rem;
-}
+
 .first-row-imgs{
-  justify-content: flex-start;
-    margin: 10px auto;
-    width: 100vw;
+    display: flex;
+  justify-content: space-around;
+   
+    margin: 0;
+    width: 94vw;
 }
 .first-row-imgs>div>i{
     display: none;
@@ -648,9 +650,11 @@ margin-right: 1.1rem;
 margin-right: 1.1rem;
 }
 .second-row-imgs{
-  justify-content: flex-start;
-    margin: 10px auto;
-    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+     
+      margin: 0;
+      width: 94vw;
 }
 .second-row-imgs>div>i{
     display: none;
@@ -684,9 +688,11 @@ margin-right: 1.1rem;
   margin-right: 1.1rem;
   }
   .third-row-imgs{
-    justify-content: flex-start;
-      margin: 10px auto;
-      width: 100vw;
+    display: flex;
+    justify-content: space-around;
+     
+      margin: 0;
+      width: 94vw;
   }
   .third-row-imgs>div>i{
       display: none;
