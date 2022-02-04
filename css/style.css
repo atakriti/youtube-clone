@@ -893,12 +893,171 @@ height: 45vh;
     width: 12vw;
 }
 
+}
+
+/* ........................ Max 1200 ..................... */
+@media only screen and (min-width:992px) and (max-width:1200px){
+.side-bar{
+grid-column: 1/2;
+font-size: 15px;
+ }
+hr{
+ display: none;
+}
+.main-img{
+    grid-column: 2/4;
+    background-position: 0rem -12rem;
+}
+/* .................. list .................. */
+.list{
+    grid-column: 2/4;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  height: 7vh;
+
+}
+.list1{
+    width:85vw;
+margin: 30px 0px;
+
+    height: 7vh;
+    }
+    .list1>ul{
+        margin-top: 1rem;
+    }
+
+    /* .................. video .............. */
+    .video{
+        grid-column: 2/4;
+       
+    }
+    .video-one{
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        
+    height: 45vh;
+    }
+    .video-one>p{
+       margin-right: 12rem;
+          width: 30vw;
+          font-size: 17px;
+      }
+      .video-img>img{
+        margin-left: 10px;
+        width: 30vw;
+        height: 30vh;
+    }
+      .video-img>i{
+        display: none;
+    }
+    /* .............. first row ................. */
+    .first-row{
+        grid-column: 2/4;
+    }
+    .play-all{
+        width: 60vw;
+        height: 7vh;
+        margin-left: 1rem;
+    }
+    .play-all>p{
+        font-size: 14px;
+    }
+    .play-all>img{
+        width: 5vw;
+        height: 7vh;
+    }
+   
+    .first-row-imgs{
+        display: flex;
+      justify-content: space-around;
+        margin: 10px 0px;
+        width: 86vw;
+        height: 30vh;
+    }
+    .first-row-imgs>div>i{
+        display: none;
+    }
+    .first-row-imgs>div>p{
+        font-size: 18px;
+        text-align: center;
+        
+        width: 12vw;
+        height: 20vh;
+    }
+    .first-row-imgs>div>img{
+        height: 10vh;
+        width: 12vw;
+    }
+    /* ................ second-row .................... */
+    .second-row{
+        grid-column: 2/4;
+    }
+    .second-row p:nth-child(1){
+    
+        margin: 1rem;
+      }
+    .second-row-imgs{
+        display: flex;
+      justify-content: space-around;
+        margin: 10px 0px;
+        width: 86vw;
+        height: 30vh;
+    }
+    .second-row-imgs>div>i{
+        display: none;
+    }
+    .second-row-imgs>div>p{
+        font-size: 18px;
+        text-align: center;
+        
+        width: 12vw;
+        height: 20vh;
+    }
+    .second-row-imgs>div>img{
+        height: 10vh;
+        width: 12vw;
+    }
+/* .................... third ...................... */
+.third-row{
+    grid-column: 2/4;
+}
+.third-row p:nth-child(1){
+
+    margin: 1rem;
+  }
+.third-row-imgs{
+    display: flex;
+  justify-content: space-around;
+    margin: 10px 0px;
+    width: 86vw;
+    height: 30vh;
+}
+.third-row-imgs>div>i{
+    display: none;
+}
+.third-row-imgs>div>p{
+    font-size: 18px;
+    text-align: center;
+    
+    width: 12vw;
+    height: 20vh;
+}
+.third-row-imgs>div>img{
+    height: 10vh;
+    width: 12vw;
+}
 
 
+}
 
-
-
-
-
-
+/* ....................... min 1200 ................ */
+@media only screen and (min-width:1200px){
+    .main-img{
+        background-position: 0rem -12rem;
+    }
+    .video-img i{
+        display: none;
+    }
 }
