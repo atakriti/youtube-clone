@@ -478,9 +478,12 @@ z-index: 2;
 .navbar{
     /* position: relative;
     z-index: -1; */
-    grid-column: 2/4;
-    width: 75vw;
     display: flex;
+    justify-content: space-around;
+    grid-column: 2/4;
+    width: 85vw;
+    display: flex;
+    border: 1px red solid;
 }
 
 .logo>i{
